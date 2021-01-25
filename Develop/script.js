@@ -15,168 +15,168 @@ $(document).ready(function() {
     
     
     //creating timeblock variables, to populate the hour into the block
-    var hour9 = pastTime.add(0, "h");
-    hour9 = hour9.format("h:mm:ss a");
-    $("block1").text(hour9);
+    var time1 = pastTime.add(0, "h");
+    time1 = time1.format("h a");
+    $(".block1").text(time1);
     
-    var hour10 = pastTime.add(1, "h");
-    hour10 = hour10.format("h:mm:ss a");
-    $("block2").text(hour10);
+    var time2 = pastTime.add(1, "h");
+    time2 = time2.format("h a");
+    $(".block2").text(time2);
 
-    var hour11 = pastTime.add(2, "h");
-    hour11 = hour11.format("h:mm:ss a");
-    $("block3").text(hour9);
+    var time3 = pastTime.add(1, "h");
+    time3 = time3.format("h a");
+    $(".block3").text(time3);
 
-    var hour12 = pastTime.add(3, "h");
-    hour12 = hour12.format("h:mm:ss a");
-    $("block4").text(hour12);
+    var time4 = pastTime.add(1, "h");
+    time4 = time4.format("h a");
+    $(".block4").text(time4);
 
-    var hour1 = pastTime.add(4, "h");
-    hour1 = hour1.format("h:mm:ss a");
-    $("block5").text(hour1);
+    var time5 = pastTime.add(1, "h");
+    time5 = time5.format("h a");
+    $(".block5").text(time5);
 
-    var hour2 = pastTime.add(5, "h");
-    hour2 = hour2.format("h:mm:ss a");
-    $("block6").text(hour2);
+    var time6 = pastTime.add(1, "h");
+    time6 = time6.format("h a");
+    $(".block6").text(time6);
 
-    var hour3 = pastTime.add(6, "h");
-    hour3 = hour3.format("h:mm:ss a");
-    $("block7").text(hour3);
+    var time7 = pastTime.add(1, "h");
+    time7 = time7.format("h a");
+    $(".block7").text(time7);
 
-    var hour4 = pastTime.add(7, "h");
-    hour4 = hour4.format("h:mm:ss a");
-    $("block8").text(hour4);
+    var time8 = pastTime.add(1, "h");
+    time8 = time8.format("h a");
+    $(".block8").text(time8);
 
-    var hour5 = pastTime.add(8, "h");
-    hour5 = hour5.format("h:mm:ss a");
-    $("block9").text(hour5);
+    var time9 = pastTime.add(1, "h");
+    time9 = time9.format("h a");
+    $(".block9").text(time9);
 
     function whatTime() {
-        hour9 = moment().startOf("day").add(9, "hours");
+        time1 = moment().startOf("day").add(9, "hours");
         currentTime = currentTime.startOf("hour");
-        if (currentTime.isAfter(hour9)) {
+        if (currentTime.isAfter(time1)) {
             $(".form9").addClass("past");
         }
-        else if (currentTime.isBefore(hour9)) {
+        else if (currentTime.isBefore(time1)) {
             $(".form9").addClass("future");
         }
-        else if (currentTime.isSame(hour9)) {
+        else if (currentTime.isSame(time1)) {
             $(".form9").addClass("present")
         };
         
-        hour10 = moment().startOf("day").add(10, "hours");
+        time2 = moment().startOf("day").add(10, "hours");
         currentTime = currentTime.startOf("hour");
-        if (currentTime.isAfter(hour10)) {
-            $(".form9").addClass("past");
+        if (currentTime.isAfter(time2)) {
+            $(".form10").addClass("past");
         }
-        else if (currentTime.isBefore(hour10)) {
-            $(".form9").addClass("future");
+        else if (currentTime.isBefore(time2)) {
+            $(".form10").addClass("future");
         }
-        else if (currentTime.isSame(hour10)) {
-            $(".form9").addClass("present")
+        else if (currentTime.isSame(time2)) {
+            $(".form10").addClass("present")
         };
 
-        hour11 = moment().startOf("day").add(11, "hours");
+        time3 = moment().startOf("day").add(11, "hours");
         currentTime = currentTime.startOf("hour");
-        if (currentTime.isAfter(hour11)) {
-            $(".form9").addClass("past");
+        if (currentTime.isAfter(time3)) {
+            $(".form11").addClass("past");
         }
-        else if (currentTime.isBefore(hour11)) {
-            $(".form9").addClass("future");
+        else if (currentTime.isBefore(time3)) {
+            $(".form11").addClass("future");
         }
-        else if (currentTime.isSame(hour11)) {
-            $(".form9").addClass("present")
+        else if (currentTime.isSame(time3)) {
+            $(".form11").addClass("present")
         };
 
-        hour12 = moment().startOf("day").add(12, "hours");
+        time4 = moment().startOf("day").add(12, "hours");
         currentTime = currentTime.startOf("hour");
-        if (currentTime.isAfter(hour12)) {
-            $(".form9").addClass("past");
+        if (currentTime.isAfter(time4)) {
+            $(".form12").addClass("past");
         }
-        else if (currentTime.isBefore(hour12)) {
-            $(".form9").addClass("future");
+        else if (currentTime.isBefore(time4)) {
+            $(".form12").addClass("future");
         }
-        else if (currentTime.isSame(hour12)) {
-            $(".form9").addClass("present")
+        else if (currentTime.isSame(time4)) {
+            $(".form12").addClass("present")
         };
 
-        hour1 = moment().startOf("day").add(13, "hours");
+        time5 = moment().startOf("day").add(13, "hours");
         currentTime = currentTime.startOf("hour");
-        if (currentTime.isAfter(hour1)) {
-            $(".form9").addClass("past");
+        if (currentTime.isAfter(time5)) {
+            $(".form1").addClass("past");
         }
-        else if (currentTime.isBefore(hour1)) {
-            $(".form9").addClass("future");
+        else if (currentTime.isBefore(time5)) {
+            $(".form1").addClass("future");
         }
-        else if (currentTime.isSame(hour1)) {
-            $(".form9").addClass("present")
+        else if (currentTime.isSame(time5)) {
+            $(".form1").addClass("present")
         };
 
-        hour2 = moment().startOf("day").add(14, "hours");
+        time6 = moment().startOf("day").add(14, "hours");
         currentTime = currentTime.startOf("hour");
-        if (currentTime.isAfter(hour2)) {
-            $(".form9").addClass("past");
+        if (currentTime.isAfter(time6)) {
+            $(".form2").addClass("past");
         }
-        else if (currentTime.isBefore(hour2)) {
-            $(".form9").addClass("future");
+        else if (currentTime.isBefore(time6)) {
+            $(".form2").addClass("future");
         }
-        else if (currentTime.isSame(hour2)) {
-            $(".form9").addClass("present")
+        else if (currentTime.isSame(time6)) {
+            $(".form2").addClass("present")
         };
 
-        hour3 = moment().startOf("day").add(15, "hours");
+        time7 = moment().startOf("day").add(15, "hours");
         currentTime = currentTime.startOf("hour");
-        if (currentTime.isAfter(hour3)) {
-            $(".form9").addClass("past");
+        if (currentTime.isAfter(time7)) {
+            $(".form3").addClass("past");
         }
-        else if (currentTime.isBefore(hour3)) {
-            $(".form9").addClass("future");
+        else if (currentTime.isBefore(time7)) {
+            $(".form3").addClass("future");
         }
-        else if (currentTime.isSame(hour3)) {
-            $(".form9").addClass("present")
+        else if (currentTime.isSame(time7)) {
+            $(".form3").addClass("present")
         };
 
-        hour4 = moment().startOf("day").add(16, "hours");
+        time8 = moment().startOf("day").add(16, "hours");
         currentTime = currentTime.startOf("hour");
-        if (currentTime.isAfter(hour4)) {
-            $(".form9").addClass("past");
+        if (currentTime.isAfter(time8)) {
+            $(".form4").addClass("past");
         }
-        else if (currentTime.isBefore(hour4)) {
-            $(".form9").addClass("future");
+        else if (currentTime.isBefore(time8)) {
+            $(".form4").addClass("future");
         }
-        else if (currentTime.isSame(hour4)) {
-            $(".form9").addClass("present")
+        else if (currentTime.isSame(time8)) {
+            $(".form4").addClass("present")
         };
 
-        hour5 = moment().startOf("day").add(17, "hours");
+        time9 = moment().startOf("day").add(17, "hours");
         currentTime = currentTime.startOf("hour");
-        if (currentTime.isAfter(hour5)) {
-            $(".form9").addClass("past");
+        if (currentTime.isAfter(time9)) {
+            $(".form5").addClass("past");
         }
-        else if (currentTime.isBefore(hour5)) {
-            $(".form9").addClass("future");
+        else if (currentTime.isBefore(time9)) {
+            $(".form5").addClass("future");
         }
-        else if (currentTime.isSame(hour5)) {
-            $(".form9").addClass("present")
+        else if (currentTime.isSame(time9)) {
+            $(".form5").addClass("present")
         };
     };
 
     whatTime();
-    var hourGroup = [9, 10, 11, 12, 1, 2, 3, 4, 5];
-    for (var i = 0; i < hourGroup.length; i++) {
-        var dataHour = localStorage.getItem(hourGroup[i]);
-        $(".form" + hourGroup[i]).val(dataHour);
-    };
+    var hourBlock = [9, 10, 11, 12, 1, 2, 3, 4, 5];
+    for (var i = 0; i < hourBlock.length; i++) {
+        var dataHour = localStorage.getItem(hourBlock[i]);
+        $(".form" + hourBlock[i]).val(dataHour);
+        };
 
 
 
-    $(".saveBtn").on("click", function save() {
-        save.preventDefault();
-        var formText = $(this).siblings("form-control").val();
+    $(".saveBtn").on("click", function() {
+        var inputText = $(this).siblings(".form-control").val();
         console.log("save button used");
-        var userText = $(this).parent().data("hour");
-
-        localStorage.setItem(userText, formText);
+        var inputHour = $(this).parent().data("hour");
+        
+        localStorage.setItem(inputHour, inputText);
+        
     });
 
 })
