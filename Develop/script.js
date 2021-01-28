@@ -8,6 +8,7 @@
 //persistent local storage
 
 $(document).ready(function() {
+    //using moment.js date time library for the calendar app. 
     $("#currentDay").text(moment().format('dddd, MMMM Do YYYY, h:mm:ss a'));
     var currentTime = moment();
     currentTime = currentTime.startOf("hour");
@@ -51,6 +52,8 @@ $(document).ready(function() {
     time9 = time9.format("hh:mm a");
     $(".block9").text(time9);
 
+    //creating a function to declare what time of day it is, then adding the class from the style sheet for future, present, or past to the input blocks
+    //each hour has it's own form in the html, so each gets its own if, else if loop.
     function whatTime() {
         time1 = moment().startOf("day").add(9, "hours");
         currentTime = currentTime.startOf("hour");
@@ -161,6 +164,7 @@ $(document).ready(function() {
         };
     };
 
+    //defining the data hour blocks. looping through
     whatTime();
     var hourBlock = [9, 10, 11, 12, 1, 2, 3, 4, 5];
     for (var i = 0; i < hourBlock.length; i++) {
@@ -169,7 +173,7 @@ $(document).ready(function() {
         };
 
 
-
+    //creating a save function on the save button to save inputs
     $(".saveBtn").on("click", function() {
         var inputText = $(this).siblings(".form-control").val();
         console.log("save button used");
