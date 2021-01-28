@@ -14,7 +14,7 @@ Within each hour block in the calendar app you can click into the middle blank s
 
 Here is a screenshot of the calendar app with everything in the past because I was working on it after work:
 
-<img src="assets/screenshotOfQuiz.png" alt="screenshot of quiz">
+<img src="./CalendarApp/screenshotOfApp.png" alt="screenshot of calendar app">
 
 
 [Code]
@@ -39,7 +39,7 @@ Following tutorials available here:
     https://www.w3schools.com/
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
     https://momentjs.com/
-    
+
 
 
 [License]
